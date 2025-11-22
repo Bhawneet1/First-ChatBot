@@ -1,6 +1,6 @@
 # First ChatBot
 
-A chatbot built using [LangGraph](https://github.com/langchain-ai/langgraph), memory, streaming, and Grok API.
+A chatbot built using [LangGraph](https://github.com/langchain-ai/langgraph), memory, streaming, Grok API, and advanced integrations.
 
 ## Features
 
@@ -8,6 +8,12 @@ A chatbot built using [LangGraph](https://github.com/langchain-ai/langgraph), me
 - **Memory:** Maintains conversation history for contextually aware interactions.
 - **Streaming:** Real-time responses for seamless user experience.
 - **Grok API Integration:** Harnesses Grok's AI for enhanced conversational intelligence.
+- **Tools Support:** Integrates a suite of tools, including custom-built operations.
+- **Build and Multiply Tool:** Includes custom tools for arithmetic operations like build and multiply.
+- **Tavily Web Search:** Integrates with Tavily to provide real-time web search capabilities within conversations.
+- **ReAct Agent:** Employs the ReAct paradigm for reasoning and acting in conversations.
+- **Human-in-the-Loop:** Allows human intervention when needed for accuracy and safety.
+- **MCP Server (Scratch Implementation):** Custom implementation of an MCP (Multi-Component Processing) server for managing workflows and extensibility.
 
 ## Installation
 
@@ -26,7 +32,7 @@ A chatbot built using [LangGraph](https://github.com/langchain-ai/langgraph), me
 ## Usage
 
 1. **Set Up Environment Variables:**
-   Configure your environment for Grok API access (see `.env.example` if available).
+   Configure your environment for Grok API and Tavily API access (see `.env.example` if available).
 
 2. **Run the Bot with uvicorn:**
    ```bash
@@ -39,8 +45,11 @@ A chatbot built using [LangGraph](https://github.com/langchain-ai/langgraph), me
 ## Example
 
 ```
-You: Hi, what's up?
-Bot: Hello! How can I assist you today?
+You: Multiply 8 and 12
+Bot: The result is 96.
+
+You: Search "latest AI news"
+Bot: [Web search results from Tavily...]
 ```
 
 ## Contributing
