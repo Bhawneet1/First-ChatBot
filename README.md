@@ -12,8 +12,7 @@ A chatbot built using [LangGraph](https://github.com/langchain-ai/langgraph), me
 - **Build and Multiply Tool:** Includes custom tools for arithmetic operations like build and multiply.
 - **Tavily Web Search:** Integrates with Tavily to provide real-time web search capabilities within conversations.
 - **ReAct Agent:** Employs the ReAct paradigm for reasoning and acting in conversations.
-- **Human-in-the-Loop:** Allows human intervention when needed for accuracy and safety.
-- **MCP Server (Scratch Implementation):** Custom implementation of an MCP (Multi-Component Processing) server for managing workflows and extensibility.
+
 
 ## Installation
 
